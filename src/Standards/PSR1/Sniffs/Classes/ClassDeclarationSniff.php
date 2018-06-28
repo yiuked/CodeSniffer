@@ -43,6 +43,7 @@ class ClassDeclarationSniff implements Sniff
      */
     public function process(File $phpcsFile, $stackPtr)
     {
+        return;
         $tokens = $phpcsFile->getTokens();
         if (isset($tokens[$stackPtr]['scope_closer']) === false) {
             return;
